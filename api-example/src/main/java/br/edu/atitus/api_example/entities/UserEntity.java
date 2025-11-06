@@ -2,11 +2,17 @@ package br.edu.atitus.api_example.entities;
 
 import java.util.UUID;
 
-private class UserEntity {
-	
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class UserEntity {
+
 	private UUID id;
+	
 	private String name;
+	
 	private String email;
+	
+	@JsonIgnore
 	private String password;
 	
 	private TypeUser type;
@@ -52,5 +58,6 @@ private class UserEntity {
 	}
 	
 	
-
+	
+	
 }
